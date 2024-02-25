@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# Getting Started with this project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can modify the default value (India) of the form by changing the code here:
+
+```javascript
+const form = useForm<z.infer<typeof FormSchema>>({
+  resolver: zodResolver(FormSchema),
+  defaultValues: {
+    items: ["India"],
+  },
+});
+```
+
 
 ## Available Scripts
 
